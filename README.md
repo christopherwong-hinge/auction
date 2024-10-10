@@ -1,4 +1,4 @@
-1# auction
+# auction
 
 `auction` is an experimental framework for managing a real-time auction for
 sending Notifications to users. Each team is granted a number of tokens which
