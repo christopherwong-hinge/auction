@@ -5,7 +5,8 @@ sending Notifications to users. Each team is granted a number of tokens which
 can be used to place bids on a specific user with a. Each bid is a transaction with
 a corresponding priority (0-10, 10 being highest priority). After receiving
 a bid, `auction` will calculate an associated cost of the bid, and if accepted,
-deduct that balance from the user's token quota. `auction` also tracks the
+deduct that balance from the user's token quota. As priority increases, the
+associated cost of a bid also increases. `auction` also tracks the
 frequency for which given priorities are requested by teams. This frequency
 count is used to keep a running reputation score for a given team, in turn
 affecting the cost function which determines the price of a bid.
