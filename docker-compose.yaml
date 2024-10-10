@@ -1,0 +1,14 @@
+services:
+  localstack:
+    image: localstack/localstack
+    volumes:
+      - ./data/localstack/dynamodb:/var/lib/localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - PERSISTENCE=1
+      - SERVICES=dynamodb
+      
+volumes:
+  dynamodb:
+    external: true
